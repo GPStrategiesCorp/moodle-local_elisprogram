@@ -23,10 +23,13 @@
  *
  */
 
-defined('MOODLE_INTERNAL') || die();
+//defined('MOODLE_INTERNAL') || die();
 
-$subplugins = array(
+$subplugins = (array) json_decode(file_get_contents(__DIR__ . "/subplugins.json"))->plugintypes;
+
+/*$subplugins = array(
     'usetenrol' => 'local/elisprogram/enrol/userset',
     'elisprogram' => 'local/elisprogram/plugins',
     'eliswidget' => 'local/elisprogram/widgets',
 );
+*/

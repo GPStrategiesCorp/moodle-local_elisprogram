@@ -1,0 +1,7 @@
+{
+    "plugintypes": {
+    	"usetenrol": "local/elisprogram/enrol/userset",
+    	"elisprogram": "local/elisprogram/plugins",
+    	"eliswidget": "local/elisprogram/widgets"
+    }
+}

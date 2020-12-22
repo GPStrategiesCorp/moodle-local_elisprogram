@@ -734,7 +734,7 @@ function cluster_get_listing($sort='name', $dir='ASC', $startrec=0, $perpage=0, 
         $params = array_merge($params,$filtersql['where_parameters']);
     }
 
-    $sort_clause = ' ORDER BY ' . implode($sort_clauses, ', ') . ' ';
+    $sort_clause = ' ORDER BY ' . implode(', ', $sort_clauses) . ' ';
 
     $sql = $select.$tables.$join.$where.$sort_clause;
 
